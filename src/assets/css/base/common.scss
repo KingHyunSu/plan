@@ -1,0 +1,93 @@
+@charset "UTF-8";
+@import './variables.scss';
+
+/* ==========================================================================
+ font 재정의
+========================================================================== */
+html{font-size:10px;}
+body{font-size:1.4rem;}
+
+
+/* ==========================================================================
+ layout 내용이 브라우저보다 짧을때 사용.
+========================================================================== */
+.min-h{
+  min-height:800px;
+  @media (max-width: $BOOT_SM_WIDTH){
+    min-height:0;
+  }
+}
+
+/* ==========================================================================
+ 미디어쿼리 기본틀
+     container  breakpoint
+========================================================================== */
+//ALL
+.container-fulid {
+   max-width:100% !important; width:100% !important;
+}
+
+//XS [M]
+@media (max-width: $BOOT_SM_WIDTH - 1){
+  .container {
+    max-width:100% !important; width:100% !important; padding:0 4% ;
+  }
+}
+
+// SM [M]
+@media (min-width: $BOOT_SM_WIDTH){
+  .container{
+    max-width:100% !important; width:100% !important; padding:0 4%;
+  }
+}
+
+// LG - 1 [M] 991px
+@media (min-width: $BOOT_MD_WIDTH){
+  .container {
+    max-width:100% !important; width: 100% !important; padding: 0 4%;
+  }
+}
+
+// LG [PC] 992px
+@media (min-width: $BOOT_LG_WIDTH){
+  .container{
+    width:940px !important; padding: 0;
+  }
+}
+
+// XL [PC] 1200px
+@media (min-width: $BOOT_XL_WIDTH ){
+  .container{
+    width:1000px !important; padding: 0;
+  }
+}
+
+
+/* ==========================================================================
+hidden mobile
+========================================================================== */
+//mobile
+@media (min-width: $BOOT_LG_WIDTH) {
+  .d-none-pc { display:none !important;}
+}
+
+//desktop
+@media (max-width: $BOOT_LG_WIDTH - 1 ) {
+  .d-none-m { display:none !important;}
+}
+
+
+
+/*over ride*/
+/*!
+ * Datetimepicker for Bootstrap 3
+ * version : 4.17.37
+ * https://github.com/Eonasdan/bootstrap-datetimepicker/
+ */
+.bootstrap-datetimepicker-widget{list-style:none}
+.bootstrap-datetimepicker-widget.dropdown-menu {
+  margin: 2px 0; padding: 4px; width: 195px; height: 175px;
+  -webkit-box-shadow: 9px 10px 10px 0px rgba(41,41,41,1);
+  -moz-box-shadow: 9px 10px 10px 0px rgba(41,41,41,1);
+  box-shadow: 9px 10px 10px 0px rgba(41,41,41,1);
+}

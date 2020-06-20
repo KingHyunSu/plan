@@ -1,0 +1,91 @@
+/***********************************************************************************************************************
+ * Color
+ **********************************************************************************************************************/
+
+/* ==========================================================================
+ Default color
+========================================================================== */
+//main 사이트 컬러
+$MAIN_COLOR: #43bf88;           //charcoal-grey
+$MAIN-CONTENTS-PURPLE-COLOR: #6067b0;
+
+
+//sub 컬러
+$SITE-SUB-COLOR:        #1ab1c0;
+
+
+//사이트 공통 컬러
+$ALERT-INFO:         #f0fafb;
+$ALERT-INFO-TXT:     #1ab1c0;
+$ALERT-SUCCESS:      #FFF;
+$ALERT-SUCCESS-TXT:  #000;
+$ALERT-DANGER:       #f22222;
+$ALERT-DANGER-TXT:   #000;
+$ALERT-WARING:       #f8f490;
+$ALERT-WARING-TXT:   #57492a;
+
+// Color Variations Array button 참조
+$prefix: color;
+$color-list: (
+        'main' $prefix $ALERT-INFO-TXT,
+        'sub' $prefix $ALERT-INFO-TXT
+        /*
+        ------ example------
+        'blue' $prefix $blue,
+        'green' $prefix $green,
+        'red' $prefix $red,
+        'white' $prefix $white
+        */
+);
+
+/* ==========================================================================
+ Font
+========================================================================== */
+$DEFAULT_FONT:"Noto Sans" !default;
+$DEFAULT_FONT_SIZE:   14px;
+$DEFAULT_FONT_COLOR:     #141414;
+
+
+/* ==========================================================================
+ Layout
+========================================================================== */
+
+//container size 각 해상도
+$BOOT_XS_MIN_WIDTH:0;
+$BOOT_XS_WIDTH:0;         // Mobile
+$BOOT_SM_WIDTH:576px;         // Mobile
+$BOOT_MD_WIDTH:768px;         // Desktop Small
+$BOOT_LG_WIDTH:992px;         // Desktop
+$BOOT_XL_WIDTH:1200px;        // Desktop Large
+
+
+/*///////////////////  LAYOUT  //////////////////////*/
+$PAY_MAX_WIDTH:1340px;                // 로그인 전 최대 화면 넓이
+$PAT_ABOUT_WIDTH:960px !important;    // about sticpay 가로 넓이
+$PAY_MIN_WIDTH:$BOOT_XS_MIN_WIDTH;    // 로그인 전 최소 화면 넓이
+$PAY_TOP_NAV_HEIGHT:70px;             // header 높이
+$PAY_FOOTER_HEIGHT:280px;             // footer 높이
+
+
+/*///////////////////  SECTION LAYOUT  //////////////////////*/
+$PAY_LAYOUT_ARTICLE_PADDING:30px;
+$PAY_LAYOUT_SECTIN_PADDING:15px;
+$PAY_LAYOUT_FORM_GROUP_PADDING:30px;
+
+// ie hack
+$ieEightAndNine: \0/IE8+9;
+
+/*///////////////////  FONT-Weight  //////////////////////*/
+$lighter: 100;
+$normal:300;
+$regular : 400;
+$bold	: 700;
+
+
+
+
+
+
+
+
+

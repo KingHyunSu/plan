@@ -1,0 +1,30 @@
+@import '../base/variables.scss';
+
+///////////////////////////////////////// LOGIN ///////////////////////////////////////////
+
+#login-layout{
+  .title-area{
+    h1{}
+    span{}
+  }
+  .login-area{
+    >div{width:100%;}
+  }
+}
+
+
+
+
+///////////////////////////////////////// FOOTER ///////////////////////////////////////////
+.v-btn {
+  &.v-btn--active{
+    > .v-btn__content{
+      span, .v-icon{color:$MAIN_COLOR;}
+    }  
+  }
+}
+
+.v-btn{
+  &:before{background-color:#fff !important;}
+}
+
