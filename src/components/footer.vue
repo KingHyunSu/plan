@@ -3,26 +3,32 @@
   <v-bottom-navigation
     :value="activeBtn"
     grow
-    absolute
+    fixed
     color="teal"
   >
     <v-btn>
-      <span>Recents</span>
+
       <v-icon>mdi-home</v-icon>
     </v-btn>
 
     <v-btn>
-      <span>Recents</span>
       <v-icon>mdi-history</v-icon>
     </v-btn>
 
     <v-btn>
-      <span>Favorites</span>
-      <v-icon>mdi-calendar_today</v-icon>
+      <span/>
+    </v-btn>
+
+    <v-btn class="todo-plus">
+      <span>+</span>
+
     </v-btn>
 
     <v-btn>
-      <span>Nearby</span>
+      <v-icon>mdi-history</v-icon>
+    </v-btn>
+
+    <v-btn>
       <v-icon>mdi-map-marker</v-icon>
     </v-btn>
   </v-bottom-navigation>

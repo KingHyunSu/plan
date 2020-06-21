@@ -1,5 +1,8 @@
 @import '../base/variables.scss';
 
+///////////////////////////////////////// v-main ///////////////////////////////////////////
+.v-main{margin-bottom:56px;}
+
 ///////////////////////////////////////// LOGIN ///////////////////////////////////////////
 
 #login-layout{
@@ -12,7 +15,16 @@
   }
 }
 
-
+//스크롤
+// .scroll-event{
+//   height: 150px;
+//   display: block;
+//   width: 100%;
+//   overflow-y: scroll;
+//   .today-card{
+//     height: 400px;
+//     overflow: hidden;}
+// }
 
 
 ///////////////////////////////////////// FOOTER ///////////////////////////////////////////
@@ -28,3 +40,19 @@
   &:before{background-color:#fff !important;}
 }
 
+.v-item-group{
+  &.v-bottom-navigation{
+    .v-btn{max-width:auto; min-width:auto; color:Red !important; padding:0;}
+  } 
+} 
+
+.v-item-group{
+  &.v-bottom-navigation{
+    .todo-plus{
+      position: absolute; top:-30px; width:55px; height:55px; 
+      border-radius: 50%; border:1px solid #ddd; display: block;
+      background: linear-gradient(90deg, rgba(198,178,236,1) 0%, rgba(156,156,234,1) 56%, rgba(145,134,223,1) 100%) !important;
+      span{font-size: 2rem; font-weight: 300; color: #fff;}
+    }
+  }  
+}
